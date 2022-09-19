@@ -2,13 +2,21 @@ from typing import Any
 
 
 class Item:
-
+    """Item for Queue"""
     def __init__(self, obj):
+        """
+        Init item for queue
+        :param obj: Any object
+        """
         self.obj = obj
         self.next = None
         self.prev = None
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """
+        Format Item to str
+        :return: str
+        """
         return str(self.obj)
 
 
